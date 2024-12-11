@@ -1,0 +1,39 @@
+{
+    "flights": [
+      {
+        "flightNo": "01EAB",
+        "From": "Mumbai",
+        "To": "london",
+        "Price": "22000",
+        "id": "b028",
+         "time":"10:30",
+         "totime" : "20:30"
+        
+
+      },
+      {
+        "flightNo": "01EAA",
+        "From": "London",
+        "To": "Mumbai",
+        "Price": "20000",
+        "id": "b027",
+         "time":"22:00",
+         "totime" : "8:00"
+        
+
+      },
+      {
+        "flightNo": "01EAC",
+        "From": "Mumbai",
+        "To": "TEXAS",
+        "Price": "25000",
+        "id": "b029",
+         "time":"10:30",
+         "totime" : "1:00"
+        
+
+      }
+    
+     
+    ]
+  }

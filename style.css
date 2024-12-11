@@ -448,4 +448,85 @@
 }
 .footer .footer-cont p span {
   color: blue;
+}
+
+.flights {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+}
+.flights .flights-cont {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.flights .flights-cont .row {
+  margin: 0px 0px 20px;
+  padding: 20px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: white;
+  border-bottom: 15px solid #f4f8fb;
+  padding-bottom: 20px;
+  transition: all 500ms ease;
+}
+.flights .flights-cont .row:hover {
+  box-shadow: 5px 5px 5px grey;
+}
+.flights .flights-cont .row .f {
+  display: flex;
+}
+.flights .flights-cont .row .f img {
+  width: 35px;
+  height: 35px;
+  margin-right: 90px;
+}
+.flights .flights-cont .row .f .img-text p {
+  color: #17181c;
+  font-size: 17px;
+  font-weight: 800;
+}
+.flights .flights-cont .row .f .img-text span {
+  color: #5e616e;
+}
+.flights .flights-cont .row .date-time p {
+  color: #17181c;
+  font-size: 21px;
+  font-weight: 900;
+}
+.flights .flights-cont .row .date-time span {
+  color: #5e616e;
+}
+.flights .flights-cont .row .input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flights .flights-cont .row .input p {
+  color: #17181c;
+  font-size: 21px;
+  font-weight: 900;
+}
+.flights .flights-cont .row .price {
+  color: #17181c;
+  font-size: 21px;
+}
+.flights .flights-cont .row button {
+  width: 180px;
+  height: 40px;
+  background-color: #fc790d;
+  border-radius: 15px;
+  border: none;
+  padding: 8px 15px;
+  transition: all 500ms ease;
+}
+.flights .flights-cont .row button:hover {
+  background-color: black;
+}
+.flights .flights-cont .row button a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
 }/*# sourceMappingURL=style.css.map */
