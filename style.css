@@ -10,6 +10,7 @@
   background-image: url(navbar-img/hero.jpeg);
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 .hero-section .navbar {
   position: fixed;
@@ -19,6 +20,17 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+  z-index: 1000;
+  background-color: #4facfe;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-section .navbar .transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+.hero-section .navbar .solid {
+  background-color: red;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .hero-section .navbar ul {
   display: flex;
@@ -27,7 +39,7 @@
 }
 .hero-section .navbar ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 900;
@@ -35,6 +47,7 @@
 }
 .hero-section .navbar ul li a:hover {
   color: orange;
+  transform: translateY(20px);
 }
 .hero-section .hero {
   display: flex;
@@ -210,4 +223,229 @@
   padding: 6px 18px;
   color: #4657f0;
   background-color: #96b2c4;
+}
+
+.benefits {
+  padding: 100px 80px 80px;
+  background-color: #f4f8fb;
+  color: #212529;
+}
+.benefits .benefit-cont {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.benefits .benefit-cont .ben {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.benefits .benefit-cont .ben .ben-col {
+  padding: 0px 12px;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .heading-title {
+  margin-bottom: 40px;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .heading-title h1 {
+  padding-left: 30px;
+  font-size: 50px;
+  font-family: monospace;
+  border-left: 15px solid blue;
+  font-weight: 600;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #1d2a3b;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .ben-context {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .ben-context .shedule {
+  margin-bottom: 40px;
+  padding: 0px 12px;
+  transition: all 500ms ease;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .ben-context .shedule:hover {
+  box-shadow: 5px 5px 5px grey;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .ben-context .shedule .head {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .ben-context .shedule .head h1 {
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 800;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .ben-context .shedule .head img {
+  height: 30px;
+  width: 30px;
+}
+.benefits .benefit-cont .ben .ben-col .ben-1 .ben-context .shedule p {
+  color: #1d2a3b;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.benefits .benefit-cont .ben .ben-images {
+  padding: 0px 15px;
+  display: flex;
+}
+.benefits .benefit-cont .ben .ben-images .img-1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 10px;
+}
+.benefits .benefit-cont .ben .ben-images .img-1 #one {
+  width: 280px;
+  height: 315px;
+  transition: all 500ms ease;
+}
+.benefits .benefit-cont .ben .ben-images .img-1 #one:hover {
+  box-shadow: 5px 5px 5px grey;
+  transform: translateX(10px);
+}
+.benefits .benefit-cont .ben .ben-images .img-1 #two {
+  width: 280px;
+  height: 220px;
+  transition: all 500ms ease;
+}
+.benefits .benefit-cont .ben .ben-images .img-1 #two:hover {
+  box-shadow: 5px 5px 5px grey;
+  transform: translateX(10px);
+}
+.benefits .benefit-cont .ben .ben-images .O {
+  flex-direction: column-reverse;
+}
+
+.galary {
+  padding: 80px 80px;
+}
+.galary h1 {
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 55px;
+  font-family: monospace;
+  font-weight: 600;
+}
+.galary .gallary-img {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 30px;
+}
+.galary .gallary-img img {
+  height: 300px;
+  width: 300px;
+  transition: all 500ms ease;
+}
+.galary .gallary-img img:hover {
+  box-shadow: 5px 5px 5px grey;
+  transform: scale(1.02);
+}
+
+.footer {
+  padding: 80px 0px;
+  background-color: #191b26;
+}
+.footer .footer-cont {
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+.footer .footer-cont .footer-img {
+  padding: 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-cont .footer-img img {
+  margin-bottom: 30px;
+}
+.footer .footer-cont .footer-img p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+.footer .footer-cont .footer-icons {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.footer .footer-cont .footer-icons a {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 500ms ease-in;
+}
+.footer .footer-cont .footer-icons a:hover {
+  transform: rotate(360deg);
+}
+.footer .footer-cont .footer-icons a i {
+  font-size: 24px;
+  color: grey;
+}
+.footer .footer-cont .footer-icons a #fb {
+  transition: all 500ms ease;
+}
+.footer .footer-cont .footer-icons a #fb:hover {
+  color: blue;
+}
+.footer .footer-cont .footer-icons a #tw {
+  transition: all 500ms ease;
+}
+.footer .footer-cont .footer-icons a #tw:hover {
+  color: blue;
+}
+.footer .footer-cont .footer-icons a #yt {
+  transition: all 500ms ease;
+}
+.footer .footer-cont .footer-icons a #yt:hover {
+  color: red;
+}
+.footer .footer-cont .footer-icons a #sk {
+  transition: all 500ms ease;
+}
+.footer .footer-cont .footer-icons a #sk:hover {
+  color: blue;
+}
+.footer .footer-cont ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.footer .footer-cont ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: all 500ms ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+}
+.footer .footer-cont ul li a:hover {
+  color: red;
+}
+.footer .footer-cont p {
+  color: white;
+  text-align: center;
+}
+.footer .footer-cont p i {
+  color: blue;
+}
+.footer .footer-cont p span {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */

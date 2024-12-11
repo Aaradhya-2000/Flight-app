@@ -12,6 +12,8 @@
     background-position: center;
     background-size: cover;
 
+    height: 100vh;
+
     // NAVBAR
     .navbar{
         position: fixed;
@@ -21,6 +23,19 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
+        z-index: 1000;
+        background-color: #4facfe;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+        .transparent {
+            background-color: transparent;
+            box-shadow: none;
+          }
+          .solid {
+            background-color: red;
+            // height: 70px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
         // padding: 20px;
 
         ul{
@@ -31,7 +46,7 @@
             li{
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: white;
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     font-size: 20px;
                     font-weight: 900;
@@ -39,6 +54,7 @@
 
                     &:hover{
                         color: orange;
+                        transform: translateY(20px);
                     }
                 }
             }
@@ -260,6 +276,284 @@
 
 
 
+        }
+    }
+}
+
+//  BENEFITS
+
+.benefits{
+    padding: 100px 80px 80px;
+    background-color: #f4f8fb;
+    color: #212529;
+
+    .benefit-cont{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .ben{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            .ben-col{
+                padding: 0px 12px;
+
+                .ben-1{
+                    .heading-title{
+                        margin-bottom: 40px;
+
+                        h1{
+                            padding-left: 30px;
+                            font-size: 50px;
+                            font-family:monospace;
+                            border-left: 15px solid blue;
+                            // text-align: center;
+                            font-weight: 600;
+                        }
+                    }
+                    p{
+                        margin-bottom: 40px;
+                        font-size: 18px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        color: #1d2a3b;
+                    }
+                    .ben-context{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        // display: flex;
+                        // flex-wrap: wrap;
+
+                        .shedule{
+                            margin-bottom: 40px;
+                            padding: 0px 12px;
+                            transition: all 500ms ease;
+                            &:hover{
+                             box-shadow: 5px 5px 5px grey;
+                         }
+
+                            .head{
+                                display: flex;
+                                gap: 15px;
+                                margin-bottom: 20px;
+
+                                h1{
+                                    font-size: 24px;
+                                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                                    font-weight: 800;
+                                }
+
+                                img{
+                                    height: 30px;
+                                    width: 30px;
+                                }
+                            }
+                            p{
+                                color: #1d2a3b;
+                                font-size: 15px ;
+                                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                // padding: 0px 10px;
+                            }
+                            
+                        
+                        }
+                    }
+                }
+            }
+            .ben-images{
+                padding: 0px 15px;
+                display: flex;
+                // justify-content: left;
+
+                .img-1{
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    gap: 10px;
+
+                    #one{
+                        width: 280px;
+                        height: 315px;
+                        
+                       transition: all 500ms ease;
+                       &:hover{
+                        box-shadow: 5px 5px 5px grey;
+                        transform: translateX(10px);
+                    }
+
+                    }
+                    #two{
+                        width: 280px;
+                        height: 220px;
+                        transition: all 500ms ease;
+                        &:hover{
+                         box-shadow: 5px 5px 5px grey;
+                         transform: translateX(10px);
+                     }
+                    }
+                }
+                .O{
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    }
+}
+
+//  GALLARY SECTION
+
+.galary{
+    padding: 80px 80px;
+    h1{
+        margin-bottom: 80px;
+        text-align: center;
+        font-size: 55px;
+        font-family:monospace;
+                           
+        font-weight: 600;
+    }
+
+    .gallary-img{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        gap: 30px;
+
+        img{
+            height: 300px;
+            width: 300px;
+
+            transition: all 500ms ease;
+            &:hover{
+             box-shadow: 5px 5px 5px grey;
+             transform: scale(1.02);
+
+         }
+        }
+    }
+    
+}
+
+//  FOOTER-SECTION
+
+.footer{
+    padding: 80px 0px;
+    background-color: #191b26;
+    .footer-cont{
+        padding: 0px 15px;
+        margin: 0px auto;
+
+        .footer-img{
+            padding: 0px 0px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                margin-bottom: 30px;
+            }
+            p{
+                color: white;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+        .footer-icons{
+            margin-bottom: 40px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+
+            a{
+                height: 55px;
+                width: 55px;
+                border-radius: 50%;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                transition: all 500ms ease-in;
+                // border: 5px dotted blue;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+
+                i{
+                    font-size: 24px;
+                    color: grey;
+                    
+
+                 
+                }
+                #fb{
+                    transition: all 500ms ease;
+                    &:hover{
+                        color: blue;
+                    }
+
+                }
+                #tw{
+                    transition: all 500ms ease;
+                    &:hover{
+                        color: blue;
+                    }
+
+                }
+                #yt{
+                    transition: all 500ms ease;
+                    &:hover{
+                        color: red;
+                    }
+
+
+                }
+                #sk{
+                    transition: all 500ms ease;
+                    &:hover{
+                        color: blue;
+                    }
+                    
+                }
+            }
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 30px;
+
+            li{
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 17px;
+                    transition: all 500ms ease;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: 900;
+
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        p{
+            color: white;
+            text-align: center;
+
+            i{
+                color: blue;
+                // margin-left: 5px;
+            }
+            span{
+                color: blue;
+            }
         }
     }
 }
