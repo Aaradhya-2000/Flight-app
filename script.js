@@ -1,10 +1,11 @@
 
-document.getElementById("btn").addEventListener("click",show);
+
 async function show() {
 
-    // let img = await fetch(imgURL);
+
 
    let person = document.getElementById("person").value;
+   let c = 1;
     
 
     let row ;
@@ -24,6 +25,7 @@ async function show() {
               <div class="f">
                 <img src="flights-img/flight.jpeg" >
                 <div class="img-text">
+                     ${c++}
                     <p>AIR INDIA</p>
                     <span>${key.flightNo}</span>
                 </div>
@@ -43,19 +45,20 @@ async function show() {
                   
               </div>
               <div class="price">
-                 ${key.Price*person}
+                 <p>Price for 1</p>
+                  <h1> ${key.Price} </h1>
               </div>
               <button><a href="">Book Now</a></button>
 
             </div>
+           
           
         `;
     });
-    // document.getElementById("i").innerHTML = imgURL;
-    // table += "</table";
+   
     document.getElementById("fi").innerHTML = row;
+    document.getElementById("hd").innerHTML = `No of Flights : ${c-1}`;
 }
-// show();
 
-// let imgURL = "https://images.ixigo.com/img/common-resources/airline-new/AI.png";
-// document.getElementById("demo").innerHTML = imgURL;
+
+show();

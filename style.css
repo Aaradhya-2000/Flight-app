@@ -62,6 +62,9 @@
   /* Button */
   /* Button Hover */
 }
+.hero-section .hero #form {
+  display: none;
+}
 .hero-section .hero .form-container {
   width: 500px;
   background: linear-gradient(#4facfe, #245471, #2978A9, #154867);
@@ -138,6 +141,52 @@
   font-size: 27px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 200;
+}
+.hero-section .hero .hero-content #h1 {
+  font-size: 75px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  transition: all 200ms ease;
+  text-align: center;
+}
+.hero-section .hero .hero-content #h1:hover {
+  color: red;
+  transform: scale(1.04);
+}
+.hero-section .hero .hero-content #span {
+  color: red;
+  transition: all 500ms ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 62px;
+  text-align: center;
+}
+.hero-section .hero .hero-content #span:hover {
+  color: black;
+}
+.hero-section .hero .hero-content #p {
+  text-align: center;
+  font-size: 39px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+.hero-section .hero .hero-content button {
+  width: 180px;
+  height: 40px;
+  background-color: #fc790d;
+  border-radius: 15px;
+  border: none;
+  padding: 8px 15px;
+  transition: all 500ms ease;
+  margin-bottom: 80px;
+}
+.hero-section .hero .hero-content button:hover {
+  background-color: black;
+  transform: scale(1.03);
+}
+.hero-section .hero .hero-content button a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
 }
 
 .special {
@@ -456,6 +505,12 @@
   margin-top: 100px;
   align-items: center;
 }
+.flights #hd {
+  font-size: 55px;
+  color: #17181c;
+  margin-bottom: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
 .flights .flights-cont {
   padding-left: 80px;
   padding-right: 80px;
@@ -509,7 +564,7 @@
   font-size: 21px;
   font-weight: 900;
 }
-.flights .flights-cont .row .price {
+.flights .flights-cont .row .price h1 {
   color: #17181c;
   font-size: 21px;
 }
@@ -524,6 +579,7 @@
 }
 .flights .flights-cont .row button:hover {
   background-color: black;
+  transform: scale(1.03);
 }
 .flights .flights-cont .row button a {
   text-decoration: none;

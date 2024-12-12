@@ -68,6 +68,9 @@
     align-content: center;
     gap: 40px;
     
+    #form{
+        display: none;
+    }
     .form-container {
         width: 500px;
         // margin: 50px auto;
@@ -166,6 +169,60 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             // color: white;
             font-weight: 200;
+        }
+        #h1{
+            font-size: 75px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+             transition: all 200ms ease;
+             text-align: center;
+
+             &:hover{
+                color: red;
+                transform: scale(1.04);
+             }
+            
+        }
+        #span{
+            color: red;
+            transition: all 500ms ease;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 62px;
+            text-align: center;
+
+            &:hover{
+                color: black;
+             }
+        }
+        #p{
+            text-align: center;
+            // padding: 60px;
+            font-size: 39px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            // color: white;
+            font-weight: 200;
+            color: white;
+        }
+        button{
+            width: 180px;
+            height: 40px;
+            background-color: #fc790d;
+            border-radius: 15px;
+            border: none;
+            padding: 8px 15px;
+
+            transition: all 500ms ease;
+            margin-bottom: 80px;
+
+            &:hover{
+                background-color: black;
+                transform: scale(1.03);
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 17px;
+            }
         }
       }
     
@@ -567,6 +624,14 @@
     margin-top: 100px;
     // background-color: ;
 
+    #hd{
+        font-size: 55px;
+        color: #17181c;
+        margin-bottom: 60px;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+
     // width: 70%;
     align-items: center;
     // justify-content: space-around;
@@ -639,8 +704,14 @@
 
             }
             .price{
-                color: #17181c;
+                //  p{
+                //     color: #5e616e;
+                //     font-size: 26px;
+                //  }
+                 h1{
+                    color: #17181c;
                 font-size: 21px;
+                 }
             }
             button{
                 width: 180px;
@@ -654,6 +725,7 @@
 
                 &:hover{
                     background-color: black;
+                    transform: scale(1.03);
                 }
 
                 a{

@@ -40,7 +40,7 @@
                         <label for="person">Passengers:</label>
                         <input type="number" id="person" name="person" min="1" max="10" placeholder="Number of passengers" required>
                     </div>
-                    <button type="submit" class="btn-submit" id="btn">Search Flights</button>
+                    <button type="submit" class="btn-submit" id="btn" onsubmit="validate()">Search Flights</button>
                 </form>
             </div>
             <div class="hero-content">
@@ -52,12 +52,30 @@
         </div>
         
     </section> 
-<!-- FLIGHT SECTION -->
-    <section class="flights">
-         <div class="flights-cont" id="fi">
-          
-         </div>
-    </section>
+
+    <footer class="footer">
+        <div class="footer-cont">
+            <div class="footer-img">
+                <img src="navbar-img/footer-logo.jpeg" alt="">
+                <p>Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet <br> est ut, scelerisque volutpat diam.</p>
+            </div>
+            <div class="footer-icons">
+                <a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" id="tw"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" id="yt"></i></a>
+                <a href="#"><i class="fa-brands fa-skype" id="sk"></i></a>
+            </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+             <p>Copyright ©2024 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <span>colorlib</span>  </p>
+        </div>
+      </footer>
+
 
 
     <script src="script.js"></script>
