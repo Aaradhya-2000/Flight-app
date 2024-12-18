@@ -1,6 +1,21 @@
-async function show() {
+document.getElementById("btn").addEventListener("click",flight);
+
+async function flight(e) {
+    e.preventDefault();
+    let from = document.getElementById("where").value.toLowerCase();
+    let to = document.getElementById("to").value.toLowerCase();
+    let date = document.getElementById("date").value.toLowerCase();
     let person = document.getElementById("person").value;
-    let c = 1;
+    let row = ``;
+    let URL = "http://localhost:3000/flights";
+
+    if(from==""|| to==""||date==""||person==""){
+        alert("Please fill in all fields");
+        return false;
+    }
+    
+
+    
 
     let AIndia = `images/flight.jpeg`;
     let Indigo = `images/flight_1.jpeg`;
@@ -10,24 +25,27 @@ async function show() {
     let img = [AIndia, Indigo];
     let name = [f1, f2];
 
-    let row = ``;
-
-    let url = "http://localhost:3000/flights";
-    let obj = await fetch(url);
+    let obj = await fetch(URL);
     console.log(obj);
 
+    let c = 1;
     let data = await obj.json();
     console.log(data);
 
-    data.map((key) => {
-        // Determine which image and name to use
-        let currentImg = c % 2 === 0 ? img[1] : img[0];
-        let currentName = c % 2 === 0 ? name[1] : name[0];
+    data.filter((key)=>{
 
-        row += `
+        
+        if(key.From.toLowerCase() === from && key.To.toLowerCase() === to){
+            let currentImg = c % 2 === 0 ? img[1] : img[0];
+            let currentName = c % 2 === 0 ? name[1] : name[0];
+            console.log(from , to);
+
+            
+
+            row += `
             <div class="row">
                 <div class="f">
-                    <img src="${currentImg}" id="img" alt="img">
+                    <img src="${currentImg}" id="img" alt="${currentName}">
                     <div class="img-text">
                         <p id="name">${currentName}</p>
                         <span>${key.flightNo}</span>
@@ -53,12 +71,15 @@ async function show() {
                 <button><a href="">Book Now</a></button>
             </div>
         `;
-        // document.getElementById("fi").innerHTML = row;
         c++;
+        }
+       console.log(c);
     });
 
-    document.getElementById("fi").innerHTML = row;
-    document.getElementById("hd").innerHTML = `No of Flights : ${c - 1}`;
-}
+    document.getElementById("fir").innerHTML = row;
+    document.getElementById("hdi").innerHTML = `Available Flights : ${c - 1}`;
+    
 
-show();
+
+    
+}

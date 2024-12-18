@@ -511,6 +511,12 @@
   margin-bottom: 60px;
   font-family: "Courier New", Courier, monospace;
 }
+.flights #hdi {
+  font-size: 55px;
+  color: #17181c;
+  margin-bottom: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
 .flights .flights-cont {
   padding-left: 80px;
   padding-right: 80px;
